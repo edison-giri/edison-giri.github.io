@@ -19,18 +19,32 @@
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            gap: 25px;
         }
-        .grid img {
-            width: 100%;
-            border-radius: 10px;
-            object-fit: cover;
+        .card {
+            background: #1a1a1a;
+            padding: 10px;
+            border-radius: 12px;
             border: 2px solid #333;
             transition: 0.3s;
         }
-        .grid img:hover {
-            transform: scale(1.05);
+        .card:hover {
+            transform: scale(1.03);
             border-color: #555;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .price {
+            margin-top: 12px;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
         }
     </style>
 </head>
@@ -39,11 +53,47 @@
 <h1>Foto Rumah</h1>
 
 <div class="grid">
-    <img src="rumah1.JPG" alt="Rumah 1">
-    <img src="rumah2.JPG" alt="Rumah 2">
-    <img src="rumah3.JPG" alt="Rumah 3">
-    <img src="rumah4.JPG" alt="Rumah 4">
-    <img src="rumah5.JPG" alt="Rumah 5">
+
+    <!-- FOTO 1 -->
+    <a href="https://wa.me/6285711519956?text=Halo%20saya%20ingin%20info%20rumah%201" target="_blank">
+        <div class="card">
+            <img src="rumah1.JPG" alt="Rumah 1">
+            <div class="price">Mulai 1.2M</div>
+        </div>
+    </a>
+
+    <!-- FOTO 2 -->
+    <a href="https://wa.me/6285711519956?text=Halo%20saya%20ingin%20info%20rumah%202" target="_blank">
+        <div class="card">
+            <img src="rumah2.JPG" alt="Rumah 2">
+            <div class="price">Mulai 1.1M</div>
+        </div>
+    </a>
+
+    <!-- FOTO 3 -->
+    <a href="https://wa.me/6285711519956?text=Halo%20saya%20ingin%20info%20rumah%203" target="_blank">
+        <div class="card">
+            <img src="rumah3.JPG" alt="Rumah 3">
+            <div class="price">Mulai 1.4M</div>
+        </div>
+    </a>
+
+    <!-- FOTO 4 -->
+    <a href="https://wa.me/6285711519956?text=Halo%20saya%20ingin%20info%20rumah%204" target="_blank">
+        <div class="card">
+            <img src="rumah4.JPG" alt="Rumah 4">
+            <div class="price">Mulai 1.3M</div>
+        </div>
+    </a>
+
+    <!-- FOTO 5 -->
+    <a href="https://wa.me/6285711519956?text=Halo%20saya%20ingin%20info%20rumah%205" target="_blank">
+        <div class="card">
+            <img src="rumah5.JPG" alt="Rumah 5">
+            <div class="price">Mulai 1.5M</div>
+        </div>
+    </a>
+
 </div>
 
 </body>
